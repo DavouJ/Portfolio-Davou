@@ -193,19 +193,19 @@ h2{
 }
 
 #project3{
-    background-image: url("/assets/images/QuantumGif.gif");
+    background-image: url("/assets/images/quantumgif.gif");
     background-position: 0% 100%;
     grid-area: project3;
 }
 
 #project4{
-    background-image: url("/assets/images/MinesweeperGif.gif");
+    background-image: url("/assets/images/minesweepergif.gif");
     background-position: 0% 50%;
     grid-area: project4;
 }
 
 #project5{
-    background-image: url("/assets/images/pingGif.gif");
+    background-image: url("/assets/images/pinggif.gif");
     background-position: 0% 50%;
     grid-area: project5;
 }
