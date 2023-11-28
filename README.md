@@ -12,19 +12,27 @@
 
 ## Deployment
 
-Application deployed via the live GitHub URL: CHANGE.
+Application deployed via the live GitHub URL: https://davouj.github.io/Portfolio-Davou/.
 
 ## Usage
 
-An archive for past and current projects.
+An archive for my past and current projects.
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](src/assets/images/davouj-github-io-code-refactoring-starter-.jpg)
+![Gif of page](/assets/images/portfolioGif.gif)
 
+## Features
+
+* When the page is loaded it presents my name, a recent photo , and links to sections about me, my work, and a form to contact me.
+* When one of the links in the navigation is clicked then the UI scrolls to the corresponding section.
+* When viewing the section about my work, it contains titled images of my applications.
+* When presented with the your first application, its image is larger in size than the others.
+* When images of the applications are clicked, the user is taken to that deployed application or Git repository.
+* When the page is resized or viewed on various screens and devices, the layout is responsive and adapts to the given viewport.
 
 
 ## Credits
 
-Original code created by Davou Jobbi
+Original code created by Davou Jobbi.
 
 ## License
 
@@ -54,13 +62,9 @@ SOFTWARE.
 
 ## Badges CHANGE
 
-![badmath](https://img.shields.io/badge/HTML-66.8-blue)
-![badmath](https://img.shields.io/badge/CSS-33.2-orange)
+![badmath](https://img.shields.io/badge/HTML-42.6-blue)
+![badmath](https://img.shields.io/badge/CSS-57.4-orange)
 
-
-## Features
-
-CHANGE
 
 ## How to Contribute
 
