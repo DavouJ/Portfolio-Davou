@@ -4,6 +4,7 @@
     border: 0;
     outline: none;
     box-sizing: border-box;
+    color:#DACCBA;
 }
 
 body {
@@ -11,29 +12,40 @@ body {
     
     flex-direction: column;
     align-items: center;
-    background: #92936C;
+    background: #9F8C86;
     
 }
 
+h1{
+    font-size: 50px;
+    font-family: cursive;
+}
+
+h2{
+    font-size: 30px;
+    font-family: cursive;
+}
 
 .container { 
+    width: 500vh;
     max-width: 1000px;
-    background-color: #A8A989;
+    background-color: #895B4A;
     padding: 28px 32px;
     margin: 50px;
     border-radius: 50px;
-    transition: 0.6s ease-out;
+    transition: 0.6s ease-in-out;
     
 }
  
 #nav ul{
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #meSection{
     display: grid;
+    height: 50vh;
     justify-items: center;
     align-content: center;
     grid-template-rows: 15% 70%;
@@ -62,47 +74,102 @@ body {
     grid-area: myPortrait;
     align-items: start;
     padding: 10px 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 10%;
+    border-radius: 50%;
+    
+    
 }
 
 #projects{
     display: grid;
+    font-size: 20px;
     align-items: center;
     justify-items: center;
-    min-height: 400px;
-    height: 30vh;
+    height: 60vh;
     grid-template-rows: 50% 50%;
     grid-template-columns: 30% 35% 35%;
     grid-template-areas: 
     "projectTitle project1 project2"
     "projectTitle project3 project4"
 }
+#project1, #project2, #project3, #project4{
+    
+}
+.projectBox{
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    transition: all 2s ease-in-out;   
+}
+
+.projectText{
+    width: 50%;
+    height: 13%;
+    transition: all 2s ease-in-out;   
+}
+
+.projectBox:hover{
+    
+    width: 150%;
+    height: 150%
+    
+}
+
+.projectBox:hover > .projectText{
+    background-color: #A8725E;
+    width: 100%;
+    height: 40%; 
+    opacity: 70%;
+    color: white; 
+    
+}
+/*.projectText:hover {
+    background-color: #A8725E;
+    width: 100%;
+    height: 40%;
+  }*/
 
 #projectTitle{
     grid-area: projectTitle;
     padding: 10px 60px;
+
 }
+
+.projectBox:hover{
+    align-self: baseline;
+  }
+
 
 #project1{
+    background-image: url("/assets/images/solar-gif.gif");
+    background-position: 0% 50%;
+    justify-items: flex-start;
     grid-area: project1;
-    padding: 10px 60px;
 }
 
+
 #project2{
-    grid-area: project2;
-    padding: 10px 60px;
+    background-image: url("/assets/images/davouj-github-io-code-refactoring-starter-.jpg");
+    background-position: 0% 0%;
+    justify-items: flex-end;
+    grid-area: project2;    
 }
 
 #project3{
     grid-area: project3;
-    padding: 10px 60px;
+    
 }
 
 #project4{
     grid-area: project4;
-    padding: 10px 60px;
+    
 }
 @media (){
 
