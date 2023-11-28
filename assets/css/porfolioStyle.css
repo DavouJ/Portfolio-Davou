@@ -14,6 +14,7 @@ body {
 
 p{
     font-size: 16px;
+
 }
 
 a{
@@ -23,11 +24,18 @@ a{
 h1{
     font-size: 50px;
     font-family: cursive;
+    align-self: center;
 }
 
 h2{
     font-size: 30px;
     font-family: cursive;
+}
+
+#details{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
 }
 
 .container { 
@@ -38,19 +46,22 @@ h2{
     margin: 5.44vh;
     border-radius: 5.44vh;
     transition: 0.6s ease-out;
-    
 }
- 
+#nav{
+    padding: 1vh;
+    
+} 
+
 #nav ul{
     display: flex;
     list-style-type: none;
     margin: 0%;
     justify-content: space-around;
-    
 }
 
 .navLinks{
     padding: 2%;
+    transition: all 0.66s ease-in-out;
 }
 
 .navLinks:hover{
@@ -114,7 +125,7 @@ h2{
 .projectBoxes{
     height: 90%;
     width: 90%;
-     
+    transition: all 0.66s ease-in-out;
     border-radius: 5.44vh;
     background-size:cover;
     background-repeat: no-repeat; 
@@ -129,10 +140,11 @@ h2{
 }
 
 .projectText{
+    transition: all 0.66s ease-in-out;
     padding: 2%;
     width: 55%;
     font-size: 20px;
-    border-radius: 5.44vh;
+    border-radius: 2vh;
     background-color: #9F8C86;
     opacity: 50%;
 }
@@ -159,6 +171,13 @@ h2{
 #projectTitle{
     grid-area: projectTitle;
     padding: 1.08vh 6.52vh;
+}
+
+.linkFill{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
 }
 
 #project1{
@@ -190,11 +209,54 @@ h2{
     background-position: 0% 50%;
     grid-area: project5;
 }
-@media (){
 
+#contactMe{
+    transition: all 0.6s ease-in-out; 
+    display: grid;
+    height: 50vh;
+    justify-items: center;
+    
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+    
+    grid-template-areas: 
+    "contactMeTitle contactInput"   
+}
+
+#contactInput{
+    transition: all 0.6s ease-in-out; 
+    grid-area: contactInput;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type=text]{
+    font-size: 30px;
+    border: none;
+    padding: 7%;
+    border-bottom: black;
+    border-radius: 5.44vh;
+    background-color: #3B2621;
+    opacity: 50%;
+}
+
+#contactMeTitle{
+    align-self: center;
+    justify-self: center;
+    grid-area: contactMeTitle;
+    padding: 1.08vh 6.52vh;
 }
 
 
+
+@media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+
+}
 
 
 
