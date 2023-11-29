@@ -189,7 +189,9 @@ h2{
 }
 
 #project2{
-    background-image: url("../images/davouj-github-io-code-refactoring-starter.JPG");
+    background: url("../images/davouj-github-io-code-refactoring-starter.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 0% 0%;
     grid-area: project2;    
 }
